@@ -11,14 +11,9 @@ for (i = 0; i < 16; i++) {
   for (column = 0; column < 16; column++) {
     let columnDiv = document.createElement("div");
     columnDiv.classList.add("cell");
-    columnDiv.textContent = `${i}:${column}`;
 
     columnDiv.addEventListener("mouseenter", () => {
       columnDiv.style.background = "blue";
-    })
-
-    columnDiv.addEventListener("mouseleave", () => {
-      columnDiv.style.background = "white";
     })
 
     rowDiv.appendChild(columnDiv);
