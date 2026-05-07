@@ -24,3 +24,7 @@ body {
   width: 20px;
   height: 20px;
 }
+
+#button {
+  padding-bottom: 20px;
+}

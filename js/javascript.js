@@ -20,3 +20,13 @@ for (i = 0; i < 16; i++) {
   }
 }
 
+function gridSizePrompt() {
+  let sizeString = prompt("Enter grid size (1 - 100)", "16");
+  let numberRegex = /^\d+$/;
+  console.log(`String: ${sizeString}`)
+  if (numberRegex.test(sizeString)) {
+    console.log(Number(sizeString));
+  } else {
+    console.log('Not a number')
+  }
+}
